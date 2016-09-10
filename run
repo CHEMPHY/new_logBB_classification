@@ -1,2 +1,3 @@
 bash generate_feature.sh
 python3 ./src/clean_features.py
+matlab ./src/split_data.m
