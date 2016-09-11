@@ -1,3 +1,8 @@
 bash generate_feature.sh
 python3 ./src/clean_features.py
 matlab ./src/split_data.m
+python3 ./src/create_feature_sets.py
+runipy ./src/dataset_analysis.ipynb
+jupyter nbconvert ./src/dataset_analysis.ipynb --to html --output ../data/dataset_analysis_report.html
+runipy ./src/model_multi_classification.ipynb
+jupyter nbconvert ./src/model_multi_classification.ipynb --to html --output ../data/model_multi_classification_report.html
